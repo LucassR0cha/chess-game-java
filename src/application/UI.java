@@ -61,6 +61,11 @@ public class UI {
 		System.out.println();
 		System.out.println("Turn: " + chessMatch.getTurn());
 		System.out.println("Aguardando jogador: " + chessMatch.getCurrentPlayer());
+		
+		if(chessMatch.getCheck()) {
+			System.out.println("CHECK!");
+		}
+		
 	}
 
 	public static void printBoard(ChessPiece[][] pieces) {
@@ -111,10 +116,12 @@ public class UI {
 				.collect(Collectors.toList());
 
 		System.out.println("Peca capturada:");
-		System.out.print("vermelha: " + ANSI_RED);
+		System.out.print("vermelha: ");
+		System.out.print(ANSI_RED);
 		System.out.println(Arrays.toString(player_one.toArray()));
 		System.out.print(ANSI_RESET);
-		System.out.print("Amarela:  " + ANSI_YELLOW);
+		System.out.print("Amarela:  ");
+		System.out.print(ANSI_YELLOW);
 		System.out.println(Arrays.toString(player_two.toArray()));
 		System.out.print(ANSI_RESET);
 	}
