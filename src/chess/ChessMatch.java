@@ -85,7 +85,10 @@ public class ChessMatch {
 	}
 
 	private Piece MakeMove(Position source, Position target) {
-		Piece p = board.RemovePiece(source);
+
+		ChessPiece p = (ChessPiece) board.RemovePiece(source);
+		p.increaseMoveCount();
+
 		Piece capturedPiece = board.RemovePiece(target);
 		board.PlacePiece(p, target);
 
@@ -97,7 +100,9 @@ public class ChessMatch {
 	}
 
 	private void UndoMove(Position source, Position target, Piece capturedPiece) {
-		Piece p = board.RemovePiece(target);
+
+		ChessPiece p = (ChessPiece) board.RemovePiece(target);
+		p.decreaseMoveCount();
 		board.PlacePiece(p, source);
 
 		// desfazendo a jogada
