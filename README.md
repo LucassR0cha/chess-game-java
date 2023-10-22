@@ -1,4 +1,4 @@
-# Big Game Survey 
+# Projeto Sistema de Jogo de Xadrez
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/LucassR0cha/config/blob/main/LICENSE) 
 
 # Projeto Sistema de Jogo de Xadrez
