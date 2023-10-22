@@ -4,7 +4,7 @@
 
 # Tecnologias utilizadas
 - Java
-  
+
 # Como executar o projeto
 
 ```bash
