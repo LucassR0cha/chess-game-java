@@ -7,6 +7,9 @@
 - Java
 
 # Como executar o projeto
+abrir terminal
+Git Bash Here
+java application/Program
 
 ```bash
 # clonar repositório
