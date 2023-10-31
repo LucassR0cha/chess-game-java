@@ -8,7 +8,7 @@
 
 # Como executar o projeto
 abrir terminal
-Git Bash Here
+Git Bash Here <br>
 java application/Program
 
 ```bash
